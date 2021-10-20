@@ -1,0 +1,38 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 30px;
+  }
+.footer_card{
+    display: flex;
+    padding: 24px 24px 50px 24px;
+    flex-direction: column;
+    color: white;
+  }
+.footer_card_title{
+    margin-bottom: 24px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+.footer_card_description{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+@media screen and (min-width: 1024px){
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-column-gap: 30px;
+      }
+    .footer_card{
+        padding: 52px 52px;
+        flex-direction: column;
+        color: white;
+      }
+    .footer_card_title{
+        font-size: 36px;
+    }
+  }  

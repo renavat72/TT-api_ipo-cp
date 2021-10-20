@@ -1,0 +1,79 @@
+.card{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  flex-direction: column;
+}
+.accordion_img{
+  margin: 0 25px;
+} 
+.accordion_content{
+  display: flex;
+  margin: auto 0;
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 300;
+}
+.accordion_text{
+  display: flex;
+  flex-direction: row;
+}
+.list_item{
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+}
+.list_item::marker{
+  color: #FF3535;
+}
+
+@media screen and (max-width: 1023px){
+  .card{
+    margin-bottom: 20px;
+  }
+  .accordion{
+    display: flex;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #F7F7F7;
+  }
+  .accordion_сontent{
+    display: flex;
+    margin-right: auto;
+  
+    font-size: 18px;
+    line-height: 23.4px;
+    font-weight: 300;
+  }
+  .active, .accordion:hover {
+      background-color: #FF3535;
+    }
+}  
+@media screen and (min-width: 1024px){
+  .card{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 68px;
+  }
+  .accordion {
+    pointer-events: none;
+    padding-top: 30px;
+    border-top: 2px solid #FF3535;
+    color: #444;
+  }
+  .accordion_img{
+    display: none;
+  } 
+  .accordion_content{
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 400;
+  }
+  .list{
+    margin-left: 95px;
+  }
+}
